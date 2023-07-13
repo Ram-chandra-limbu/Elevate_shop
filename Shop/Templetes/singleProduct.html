@@ -1,0 +1,30 @@
+
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block title %}
+    Product Cart
+{% endblock title %}
+
+{% block content %}
+
+    <div class="cart1">
+        <div class="cart-items1">
+                <div class="cart-item1">
+                    <img src="{{ product.image.url }}" alt="{{ product.title }}" class="cart-item-image1">
+                    <div class="cart-item-details1">
+                        <h3 class="cart-item-title1">{{ product.title }}</h3>
+                        <p class="cart-item-quantity1">Available Quantity: {{ product.quantity }}</p>
+                        <p>Warrenty:{{product.warrenty }}</p> 
+                        <p>Return policy:{{product.return_policy}}</p>
+                        <p class="cart-item-description1">{{ product.description }}</p>
+                        <p class="cart-item-price1">Marked Price: Rs{{ product.price }}</p>
+                        <p>Selling price: Rs{{product.selling_price }}</p>
+                        <a href="#" class="btn btn-info1">Add to card</a>
+                    </div>
+                </div>
+        
+        </div>
+
+    </div>
+{% endblock content %}

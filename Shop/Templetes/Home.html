@@ -1,0 +1,36 @@
+
+{% extends 'Base.html' %}
+{% load static %}
+
+{% block title %}
+    Product Cart
+{% endblock title %}
+
+{% block content %}
+<div class="home">
+    <img class="homeImg" src="{% static 'image/v2.png' %}" alt="">
+    <h1 class="welcome">Welcome to&nbsp;<span>Elevate &nbsp</span> shop</h1>
+    <h2 class="find">Find your Own &nbsp;<span> choice</span></h2>
+</div>
+    <div class="cart">
+        <h2 class="cart-title">Our Products</h2>
+        <div class="cart-items">
+            {% for product in product %}
+                <div class="cart-item">
+                   <a href="{% url 'product:singleProduct' product.slug %}"> <img src="{{ product.image.url }}"  alt="{{ product.title }}" class="cart-item-image"> </a>
+                    <div class="cart-item-details">
+                        <h3 class="cart-item-title">{{ product.title }}</h3>
+                        <p class="cart-item-description">{{ product.discription }}</p>
+                        <p class="cart-item-quantity">Available Quantity: {{ product.quantity }}</p>
+                        <p>Warrenty:{{product.warrenty }}</p>
+                        <p>Return_policy:{{product.return_policy}}</p>
+                        <p class="cart-item-price">Marked Price: Rs{{ product.price }}</p>
+                        <p>Selling_price: Rs{{product.selling_price }}</p>
+                        <a href="#" class="btn btn-info">Add to card</a>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+{% endblock content %}

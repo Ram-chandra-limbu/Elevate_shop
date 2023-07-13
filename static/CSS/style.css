@@ -1,0 +1,235 @@
+/* CSS for Navbar */
+.navbar{
+    margin: 0px;
+    width:100%;
+    height: 100px;
+    background-color: rgb(55, 51, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:100px;
+    position:sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav-item{
+    height: 60px;
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+
+.nav-item li a{
+    color: white;
+    text-decoration: none;
+}
+.Card{
+    font-size: 30px;
+}
+
+.icons{
+    display: flex;
+    gap: 40px;
+    color: aqua;
+}
+
+
+
+.product1{
+    color:rgb(74, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search{
+    border-radius: 16px;
+    height: 40px;
+    width: 300px;
+    outline: none;
+}
+.Card1{
+    font-size: 20px;
+}
+
+.logo{
+    margin-left:-100px ;
+    width:60px;
+    border-radius: 50%;
+}
+
+
+/* CSS for home page */
+.homeImg{
+    width: 500px;
+}
+
+.home{
+    width: 100%;
+    height: 460px;
+    background-color: rgb(123, 116, 116);
+}
+
+.welcome{
+    color:rgb(193, 178, 178);
+    position: absolute;
+    bottom: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    top: 50%;
+    z-index: 100; 
+}
+
+.find{
+    color: antiquewhite;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:320px;
+    z-index: 1111;
+}
+
+.find span{
+    color: rgb(227, 132, 112);
+    font-size: 36px;
+}
+
+.welcome span{
+color: red;
+font-size: 48px;
+}
+/* css for product page */
+.cart-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cart-item-image {
+    width: 160px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    font-size: 13px;
+    gap:-200px;
+}
+.cart-item-details p{
+    line-height: 1.2;
+    width: 60%;
+    text-align: justify;
+}
+
+.cart-item-title {
+    font-size: 18px;  
+}
+
+.cart-item-description {
+    font-size: 14px;
+    height: 100px;
+}
+
+.cart-item-details .btn.btn-info{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius:10px;
+    color: white;
+    width: 100px;
+    height: 30px;
+}
+
+
+
+/* CSS for SingleProduct */
+.cart-title1 {
+    margin-bottom: 30px;
+    margin-block-start:0rem;
+    margin-block-end:0rem;
+    text-align: center;
+    font-size: 36px;  
+}
+
+.cart-items1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.cart-item1 {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.cart-item-image1 {
+    width: 400px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+
+.cart-item-details1 {
+    flex-grow: 1;
+    font-size: 16px;
+    gap:-200px;
+}
+
+.cart-item-details1 p{
+    margin-top: 1px;
+    line-height: 1;
+    width: 90%;
+    text-align: justify;
+}
+
+.cart-item-title1 {
+    margin-top: -20px;
+    display: flex;
+    font-size: 36px;
+}
+
+.cart-item-description1 {
+    font-size: 16px;
+    /* height: 100px; */
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-item-details1 .btn.btn-info1{
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius:10px;
+    color: white;
+    width: 140px;
+    height: 50px;
+}
+
+
+
+   
